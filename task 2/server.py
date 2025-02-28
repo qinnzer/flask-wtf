@@ -11,8 +11,7 @@ def index(titl):
 
 @app.route('/training/<prof>')
 def training(prof):
-    return render_template('training.html', prof=prof, img1={url_for('static', filename='img/one.png')},
-                           img2={url_for('static', filename='img/two.png')})
+    return render_template('training.html', prof=prof)
 
 
 if __name__ == '__main__':

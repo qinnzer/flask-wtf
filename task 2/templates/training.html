@@ -1,11 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <link rel="stylesheet" type="text/css" href="/static/css/align.css" />
     {% if "инженер" in prof %}
     <h2>Инженерные тренажеры</h2>
-    <img src="{{img1}}">
+    <p><img src="/static/img/one.png"></p>
     {% else %}
     <h2>Научные симуляторы</h2>
-    <img src="{{img2}}">
+    <p><img src="/static/img/two.png"></p>
     {% endif %}
 {% endblock %}
